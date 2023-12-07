@@ -1,3 +1,13 @@
+## 克隆本仓库之后初始化的方法
+
+1. 找到 www/package.json 
+2. 剪切29行~31行的内容。
+3. 运行 `npm install` 
+4. 将剪切的三行代码粘贴到原位
+5. 运行 `npm install` 
+
+我也不知道为什么需要这么做。可能是npm不能同时导入本地依赖和远程依赖吧。
+
 ## Based on this template
 
 [create-wasm-app](https://github.com/rustwasm/create-wasm-app)
