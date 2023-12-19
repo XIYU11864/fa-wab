@@ -1,3 +1,32 @@
-pre {
-    color: red;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input#myInput{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    margin-bottom: 10px;
+
+}
+
+pre#output,
+pre#rg {
+    width: 100%;
+    text-align: left;
+}
+
+div#graph {
+    width: 100%;
+    text-align: center;
 }

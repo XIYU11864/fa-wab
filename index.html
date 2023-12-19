@@ -9,11 +9,24 @@
 
 <body>
   <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-  <input id="myInput" type="text" placeholder="input a re." title="re">
+  <input id="myInput" type="text" placeholder="input a re" title="0、1、*、+、(、)">
   <button>Submit</button>
-  <pre id="output"></pre>
-  <pre id="rg"></pre>
+  <div id="container">
+    <p>dfa's transition table:</p>
+    <pre id="output"></pre>
+    <p>rg:</p>
+    <pre id="rg"></pre>
+    <p>dfa's transition diagram:</p>
+
+  </div>
+  <div id="graph"></div>
+
+  <script src="//d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+  <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+
   <script src="./bootstrap.js"></script>
+
 </body>
 
 </html>
